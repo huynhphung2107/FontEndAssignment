@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- navbar  -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body ng-app="my-app">
+    <div class="col-md-3">
+      <div class="thumbnail" ng-controller="sanPhamController">
+        <img src="{{sanPham.img}}" alt="Lights" style="width: 100%" />
+        <div class="caption">
+          <p>mota: {{sanPham.mota}}</p>
+          <p>giaban: {{sanPham.giaban}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div ng-controller="mycontroller1">
+      <h1>{{welcome1}}</h1>
+    </div>
+
+    <div ng-controller="mycontroller3">
+      <div>
+        <h1>nhap so luong: <input type="text" ng-model="soluong" /></h1>
+        <h1>Thanh tien: {{soluong*5000}}</h1>
+      </div>
+    </div>
+
+    <script>
+      function func3($scope) {
+        $scope.soluong = 1;
+      }
+
+      function func1($scope) {
+        $scope.welcome1 = "Dau la noi co ay den moi khu thay bu";
+      }
+
+      function sanPham($scope) {
+        var sanpham = {
+          img: "/imgDienThoai/dt3.webp",
+          mota: "Iphone 14 promax 512GB",
+          giaban: "1000000 VNĐ",
+        };
+        $scope.sanPham = sanpham;
+      }
+      var app = angular.module("my-app", []);
+      app.controller("mycontroller1", func1);
+      app.controller("mycontroller3", func3);
+      app.controller("sanPhamController", sanPham);
+    </script>
+  </body>
+</html>

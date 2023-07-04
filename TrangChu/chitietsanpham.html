@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="/TrangChu/chitietsanpham.css" />
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="container-fliud">
+          <div class="wrapper row">
+            <div  class=" preview col-md-6">
+              <div class="preview-pic tab-content">
+                <div class="tab-pane active" id="id" >
+                  <img id="image" ng-model="image" src="{{sanpham.image}}" >
+                </div>
+               
+               
+              </div>
+             
+            </div>
+            <div class="details col-md-6">
+              <h3 class="product-title">{{sanpham.name}}</h3>
+                          <h4 class="price">{{sanpham.price}}</h4>
+             
+              <h5 class="sizes">
+                Loai:
+                <span class="size" data-toggle="tooltip" title="small">256GB</span>
+                <span class="size" data-toggle="tooltip" title="medium">512GB</span>
+                <span class="size" data-toggle="tooltip" title="large">1T</span>
+                             
+              </h5>
+              <h5 class="colors">
+                Màu:
+                <span
+                  class="color blue "
+                  data-toggle="tooltip"
+                  title="Not In store"
+                ></span>
+                <span class="color red "></span>
+                <span class="color yellow"></span>
+              </h5>
+              <div class="action">
+                <a href="">
+                  <button class="add-to-cart btn btn-default" type="button">
+                    MUA NGAY
+                  </button>
+                </a>
+                <a href="" target="_blank">
+                  <button class="like btn btn-default" type="button">
+                    <span class="fa fa-heart"></span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

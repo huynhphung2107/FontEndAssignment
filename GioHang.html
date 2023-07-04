@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- navbar  -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- navbar  -->
+
+    <link rel="stylesheet" href="GioiThieu.css" />
+  </head>
+  <body>
+    
+
+    <!-- Background image -->
+    <div class="bg-image background">
+      <div style="text-align: center">
+        <h3 style="padding-top: 5px">Giỏ hàng</h3>
+        <div>
+          <a
+            href="/TrangChu/index.html"
+            style="text-decoration: none; color: black"
+          >
+            TRANG CHỦ /
+          </a>
+          <a href="/GioiThieu.html" style="text-decoration: none; color: black"
+            >Giỏ hàng</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+    <div style="background-color: antiquewhite">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>SẢN PHẨM</th>
+                  <th>SỐ LƯỢNG</th>
+                  <th class="text-center">GIÁ BÁN</th>
+                  <th class="text-center">TỔNG TIỀN</th>
+                  <th> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-sm-8 col-md-6">
+                    <div class="media">
+                      <a class="thumbnail pull-left" href="#">
+                        <img
+                          class="media-object"
+                          src="/imgDienThoai/dt1.webp"
+                          style="width: 72px; height: 72px"
+                        />
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <a href="#">Iphone 14 pro max 512GB</a>
+                        </h4>
+                        <h5 class="media-heading">by <a href="#">Apple</a></h5>
+                        <span>Tình Trạng: </span
+                        ><span class="text-success"
+                          ><strong>Còn hàng</strong></span
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="col-sm-1 col-md-1" style="text-align: center">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      value="3"
+                    />
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong>$4.87</strong>
+                  </td>
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong>$14.61</strong>
+                  </td>
+                  <td class="col-sm-1 col-md-1">
+                    <button type="button" class="btn btn-danger">
+                      <span class="glyphicon glyphicon-remove"></span> Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-md-6">
+                    <div class="media">
+                      <a class="thumbnail pull-left" href="#">
+                        <img
+                          class="media-object"
+                          src="imgDienThoai/dt2.webp"
+                          style="width: 72px; height: 72px"
+                        />
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <a href="#">Iphone 13 pro max 512GB</a>
+                        </h4>
+                        <h5 class="media-heading">by <a href="#">Apple</a></h5>
+                        <span>Tình Trạng: </span
+                        ><span class="text-warning"
+                          ><strong>Còn hàng</strong></span
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="col-md-1" style="text-align: center">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      value="2"
+                    />
+                  </td>
+                  <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                  <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                  <td class="col-md-1">
+                    <button type="button" class="btn btn-danger">
+                      <span class="glyphicon glyphicon-remove"></span> Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td><h5>Tổng thu</h5></td>
+                  <td class="text-right">
+                    <h5><strong>$24.59</strong></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td><h5>Phí vận chuyện</h5></td>
+                  <td class="text-right">
+                    <h5><strong>$6.94</strong></h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td><h3>Tiền phải trả</h3></td>
+                  <td class="text-right">
+                    <h3><strong>$31.53</strong></h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td>
+                    <button type="button" class="btn btn-default">
+                      <a href="#SanPham" style="text-decoration: none;"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        Tiếp tục mua sắm</a>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">
+                      Thanh toán <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
